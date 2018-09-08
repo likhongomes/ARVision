@@ -24,6 +24,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Configure and present the SpriteKit scene that draws overlay content.
         let overlayScene = SKScene()
         overlayScene.scaleMode = .aspectFill
