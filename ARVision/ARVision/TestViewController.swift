@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TestViewController: UIViewController {
 
+    var audioPlayer = AVAudioPlayer()
+    
+    @IBAction func playSoundClicked(_ sender: Any) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     
 

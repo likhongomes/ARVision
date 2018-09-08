@@ -14,6 +14,7 @@
 		6E497D402144183B00885A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */; };
 		6E497D4B2144183B00885A4B /* ARVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D4A2144183B00885A4B /* ARVisionTests.swift */; };
 		6E497D562144183B00885A4B /* ARVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D552144183B00885A4B /* ARVisionUITests.swift */; };
+		6E497D662144257C00885A4B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D652144257C00885A4B /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6E497D512144183B00885A4B /* ARVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E497D552144183B00885A4B /* ARVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVisionUITests.swift; sourceTree = "<group>"; };
 		6E497D572144183B00885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E497D652144257C00885A4B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				6E497D332144183A00885A4B /* AppDelegate.swift */,
 				6E497D372144183A00885A4B /* ViewController.swift */,
+				6E497D652144257C00885A4B /* TestViewController.swift */,
 				6E497D392144183A00885A4B /* Main.storyboard */,
 				6E497D3C2144183B00885A4B /* Assets.xcassets */,
 				6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E497D382144183A00885A4B /* ViewController.swift in Sources */,
+				6E497D662144257C00885A4B /* TestViewController.swift in Sources */,
 				6E497D342144183A00885A4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
