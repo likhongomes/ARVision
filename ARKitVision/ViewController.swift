@@ -160,20 +160,29 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
         guard !self.identifierString.isEmpty else {
             return // No object was classified.
         }
-        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence"
+        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence and a distance of \(self.anchorDistance)"
         statusViewController.showMessage(message)
+        
     }
     
     // MARK: - Tap gesture handler & ARSKViewDelegate
     
     // Labels for classified objects by ARAnchor UUID
     private var anchorLabels = [UUID: String]()
-    
+    private var anchorDistance = ""
     // When the user taps, add an anchor associated with the current classification result.
     /// - Tag: PlaceLabelAtLocation
-    @IBAction func placeLabelAtLocation(sender: UITapGestureRecognizer) {
-        let hitLocationInView = sender.location(in: sceneView)
-        let hitTestResults = sceneView.hitTest(hitLocationInView, types: [.featurePoint, .estimatedHorizontalPlane])
+    
+    func placeLabel() {
+     var locations: Array <Any> = [self.sceneView.centerXAnchor,self.sceneView.topAnchor,self.sceneView.leftAnchor,self.sceneView.rightAnchor,self.sceneView.widthAnchor, self.sceneView.bottomAnchor]
+        var count = 0
+        while(true){
+        let hitLocationInView = locations[count]
+        count = count + 1
+            let hitTestResults = sceneView.hitTest(hitLocationInView, types: [.featurePoint, .estimatedHorizontalPlane])
+//                sceneView.hitTest(hitLocationInView, types: [.featurePoint, .estimatedHorizontalPlane])
+        }
+        
         if let result = hitTestResults.first {
             
             // Add a new anchor at the tap location.
@@ -181,12 +190,18 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
             sceneView.session.add(anchor: anchor)
             
             // Track anchor ID to associate text with the anchor after ARKit creates a corresponding SKNode.
-           //print distance
-            anchorLabels[anchor.identifier] = identifierString
+            //print distance This is where the distance values are spit out to the console!!
+            anchorLabels[anchor.identifier] = result.distance.description
             for result in sceneView.hitTest(CGPoint(x: 0.5, y: 0.5), types: [.existingPlaneUsingExtent, .featurePoint]) {
                 print(result.distance, result.worldTransform)
+                self.anchorDistance = result.distance.description
+                //return result.distance
             }
         }
+        
+    }
+    @IBAction func placeLabelAtLocation(sender: UITapGestureRecognizer) {
+        placeLabel()
     }
     
     // When an anchor is added, provide a SpriteKit node for it and set its text to the classification label.
