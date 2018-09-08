@@ -7,64 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E497CF62143BBBD00885A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497CF52143BBBD00885A4B /* AppDelegate.swift */; };
-		6E497CF82143BBBD00885A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497CF72143BBBD00885A4B /* ViewController.swift */; };
-		6E497CFB2143BBBD00885A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497CF92143BBBD00885A4B /* Main.storyboard */; };
-		6E497CFD2143BBC000885A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E497CFC2143BBC000885A4B /* Assets.xcassets */; };
-		6E497D002143BBC000885A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497CFE2143BBC000885A4B /* LaunchScreen.storyboard */; };
-		6E497D0B2143BBC000885A4B /* ARVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D0A2143BBC000885A4B /* ARVisionTests.swift */; };
-		6E497D162143BBC000885A4B /* ARVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D152143BBC000885A4B /* ARVisionUITests.swift */; };
+		6E497D342144183A00885A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D332144183A00885A4B /* AppDelegate.swift */; };
+		6E497D362144183A00885A4B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D352144183A00885A4B /* art.scnassets */; };
+		6E497D382144183A00885A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D372144183A00885A4B /* ViewController.swift */; };
+		6E497D3B2144183A00885A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D392144183A00885A4B /* Main.storyboard */; };
+		6E497D3D2144183B00885A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D3C2144183B00885A4B /* Assets.xcassets */; };
+		6E497D402144183B00885A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */; };
+		6E497D4B2144183B00885A4B /* ARVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D4A2144183B00885A4B /* ARVisionTests.swift */; };
+		6E497D562144183B00885A4B /* ARVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D552144183B00885A4B /* ARVisionUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E497D072143BBC000885A4B /* PBXContainerItemProxy */ = {
+		6E497D472144183B00885A4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E497CEA2143BBBD00885A4B /* Project object */;
+			containerPortal = 6E497D282144183A00885A4B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6E497CF12143BBBD00885A4B;
+			remoteGlobalIDString = 6E497D2F2144183A00885A4B;
 			remoteInfo = ARVision;
 		};
-		6E497D122143BBC000885A4B /* PBXContainerItemProxy */ = {
+		6E497D522144183B00885A4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E497CEA2143BBBD00885A4B /* Project object */;
+			containerPortal = 6E497D282144183A00885A4B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6E497CF12143BBBD00885A4B;
+			remoteGlobalIDString = 6E497D2F2144183A00885A4B;
 			remoteInfo = ARVision;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E497CF22143BBBD00885A4B /* ARVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E497CF52143BBBD00885A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E497CF72143BBBD00885A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6E497CFA2143BBBD00885A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6E497CFC2143BBC000885A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E497CFF2143BBC000885A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6E497D012143BBC000885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E497D062143BBC000885A4B /* ARVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E497D0A2143BBC000885A4B /* ARVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVisionTests.swift; sourceTree = "<group>"; };
-		6E497D0C2143BBC000885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E497D112143BBC000885A4B /* ARVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E497D152143BBC000885A4B /* ARVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVisionUITests.swift; sourceTree = "<group>"; };
-		6E497D172143BBC000885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E497D302144183A00885A4B /* ARVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E497D332144183A00885A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E497D352144183A00885A4B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		6E497D372144183A00885A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E497D3A2144183A00885A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E497D3C2144183B00885A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E497D3F2144183B00885A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E497D412144183B00885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E497D462144183B00885A4B /* ARVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E497D4A2144183B00885A4B /* ARVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVisionTests.swift; sourceTree = "<group>"; };
+		6E497D4C2144183B00885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E497D512144183B00885A4B /* ARVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E497D552144183B00885A4B /* ARVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVisionUITests.swift; sourceTree = "<group>"; };
+		6E497D572144183B00885A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E497CEF2143BBBD00885A4B /* Frameworks */ = {
+		6E497D2D2144183A00885A4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E497D032143BBC000885A4B /* Frameworks */ = {
+		6E497D432144183B00885A4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E497D0E2143BBC000885A4B /* Frameworks */ = {
+		6E497D4E2144183B00885A4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E497CE92143BBBD00885A4B = {
+		6E497D272144183A00885A4B = {
 			isa = PBXGroup;
 			children = (
-				6E497CF42143BBBD00885A4B /* ARVision */,
-				6E497D092143BBC000885A4B /* ARVisionTests */,
-				6E497D142143BBC000885A4B /* ARVisionUITests */,
-				6E497CF32143BBBD00885A4B /* Products */,
+				6E497D322144183A00885A4B /* ARVision */,
+				6E497D492144183B00885A4B /* ARVisionTests */,
+				6E497D542144183B00885A4B /* ARVisionUITests */,
+				6E497D312144183A00885A4B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6E497CF32143BBBD00885A4B /* Products */ = {
+		6E497D312144183A00885A4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E497CF22143BBBD00885A4B /* ARVision.app */,
-				6E497D062143BBC000885A4B /* ARVisionTests.xctest */,
-				6E497D112143BBC000885A4B /* ARVisionUITests.xctest */,
+				6E497D302144183A00885A4B /* ARVision.app */,
+				6E497D462144183B00885A4B /* ARVisionTests.xctest */,
+				6E497D512144183B00885A4B /* ARVisionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E497CF42143BBBD00885A4B /* ARVision */ = {
+		6E497D322144183A00885A4B /* ARVision */ = {
 			isa = PBXGroup;
 			children = (
-				6E497CF52143BBBD00885A4B /* AppDelegate.swift */,
-				6E497CF72143BBBD00885A4B /* ViewController.swift */,
-				6E497CF92143BBBD00885A4B /* Main.storyboard */,
-				6E497CFC2143BBC000885A4B /* Assets.xcassets */,
-				6E497CFE2143BBC000885A4B /* LaunchScreen.storyboard */,
-				6E497D012143BBC000885A4B /* Info.plist */,
+				6E497D332144183A00885A4B /* AppDelegate.swift */,
+				6E497D352144183A00885A4B /* art.scnassets */,
+				6E497D372144183A00885A4B /* ViewController.swift */,
+				6E497D392144183A00885A4B /* Main.storyboard */,
+				6E497D3C2144183B00885A4B /* Assets.xcassets */,
+				6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */,
+				6E497D412144183B00885A4B /* Info.plist */,
 			);
 			path = ARVision;
 			sourceTree = "<group>";
 		};
-		6E497D092143BBC000885A4B /* ARVisionTests */ = {
+		6E497D492144183B00885A4B /* ARVisionTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E497D0A2143BBC000885A4B /* ARVisionTests.swift */,
-				6E497D0C2143BBC000885A4B /* Info.plist */,
+				6E497D4A2144183B00885A4B /* ARVisionTests.swift */,
+				6E497D4C2144183B00885A4B /* Info.plist */,
 			);
 			path = ARVisionTests;
 			sourceTree = "<group>";
 		};
-		6E497D142143BBC000885A4B /* ARVisionUITests */ = {
+		6E497D542144183B00885A4B /* ARVisionUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6E497D152143BBC000885A4B /* ARVisionUITests.swift */,
-				6E497D172143BBC000885A4B /* Info.plist */,
+				6E497D552144183B00885A4B /* ARVisionUITests.swift */,
+				6E497D572144183B00885A4B /* Info.plist */,
 			);
 			path = ARVisionUITests;
 			sourceTree = "<group>";
@@ -128,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E497CF12143BBBD00885A4B /* ARVision */ = {
+		6E497D2F2144183A00885A4B /* ARVision */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E497D1A2143BBC000885A4B /* Build configuration list for PBXNativeTarget "ARVision" */;
+			buildConfigurationList = 6E497D5A2144183B00885A4B /* Build configuration list for PBXNativeTarget "ARVision" */;
 			buildPhases = (
-				6E497CEE2143BBBD00885A4B /* Sources */,
-				6E497CEF2143BBBD00885A4B /* Frameworks */,
-				6E497CF02143BBBD00885A4B /* Resources */,
+				6E497D2C2144183A00885A4B /* Sources */,
+				6E497D2D2144183A00885A4B /* Frameworks */,
+				6E497D2E2144183A00885A4B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +145,69 @@
 			);
 			name = ARVision;
 			productName = ARVision;
-			productReference = 6E497CF22143BBBD00885A4B /* ARVision.app */;
+			productReference = 6E497D302144183A00885A4B /* ARVision.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6E497D052143BBC000885A4B /* ARVisionTests */ = {
+		6E497D452144183B00885A4B /* ARVisionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E497D1D2143BBC000885A4B /* Build configuration list for PBXNativeTarget "ARVisionTests" */;
+			buildConfigurationList = 6E497D5D2144183B00885A4B /* Build configuration list for PBXNativeTarget "ARVisionTests" */;
 			buildPhases = (
-				6E497D022143BBC000885A4B /* Sources */,
-				6E497D032143BBC000885A4B /* Frameworks */,
-				6E497D042143BBC000885A4B /* Resources */,
+				6E497D422144183B00885A4B /* Sources */,
+				6E497D432144183B00885A4B /* Frameworks */,
+				6E497D442144183B00885A4B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6E497D082143BBC000885A4B /* PBXTargetDependency */,
+				6E497D482144183B00885A4B /* PBXTargetDependency */,
 			);
 			name = ARVisionTests;
 			productName = ARVisionTests;
-			productReference = 6E497D062143BBC000885A4B /* ARVisionTests.xctest */;
+			productReference = 6E497D462144183B00885A4B /* ARVisionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6E497D102143BBC000885A4B /* ARVisionUITests */ = {
+		6E497D502144183B00885A4B /* ARVisionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E497D202143BBC000885A4B /* Build configuration list for PBXNativeTarget "ARVisionUITests" */;
+			buildConfigurationList = 6E497D602144183B00885A4B /* Build configuration list for PBXNativeTarget "ARVisionUITests" */;
 			buildPhases = (
-				6E497D0D2143BBC000885A4B /* Sources */,
-				6E497D0E2143BBC000885A4B /* Frameworks */,
-				6E497D0F2143BBC000885A4B /* Resources */,
+				6E497D4D2144183B00885A4B /* Sources */,
+				6E497D4E2144183B00885A4B /* Frameworks */,
+				6E497D4F2144183B00885A4B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6E497D132143BBC000885A4B /* PBXTargetDependency */,
+				6E497D532144183B00885A4B /* PBXTargetDependency */,
 			);
 			name = ARVisionUITests;
 			productName = ARVisionUITests;
-			productReference = 6E497D112143BBC000885A4B /* ARVisionUITests.xctest */;
+			productReference = 6E497D512144183B00885A4B /* ARVisionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E497CEA2143BBBD00885A4B /* Project object */ = {
+		6E497D282144183A00885A4B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = PennAppsXVIII;
 				TargetAttributes = {
-					6E497CF12143BBBD00885A4B = {
+					6E497D2F2144183A00885A4B = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					6E497D052143BBC000885A4B = {
+					6E497D452144183B00885A4B = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 6E497CF12143BBBD00885A4B;
+						TestTargetID = 6E497D2F2144183A00885A4B;
 					};
-					6E497D102143BBC000885A4B = {
+					6E497D502144183B00885A4B = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 6E497CF12143BBBD00885A4B;
+						TestTargetID = 6E497D2F2144183A00885A4B;
 					};
 				};
 			};
-			buildConfigurationList = 6E497CED2143BBBD00885A4B /* Build configuration list for PBXProject "ARVision" */;
+			buildConfigurationList = 6E497D2B2144183A00885A4B /* Build configuration list for PBXProject "ARVision" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +215,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 6E497CE92143BBBD00885A4B;
-			productRefGroup = 6E497CF32143BBBD00885A4B /* Products */;
+			mainGroup = 6E497D272144183A00885A4B;
+			productRefGroup = 6E497D312144183A00885A4B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E497CF12143BBBD00885A4B /* ARVision */,
-				6E497D052143BBC000885A4B /* ARVisionTests */,
-				6E497D102143BBC000885A4B /* ARVisionUITests */,
+				6E497D2F2144183A00885A4B /* ARVision */,
+				6E497D452144183B00885A4B /* ARVisionTests */,
+				6E497D502144183B00885A4B /* ARVisionUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E497CF02143BBBD00885A4B /* Resources */ = {
+		6E497D2E2144183A00885A4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E497D002143BBC000885A4B /* LaunchScreen.storyboard in Resources */,
-				6E497CFD2143BBC000885A4B /* Assets.xcassets in Resources */,
-				6E497CFB2143BBBD00885A4B /* Main.storyboard in Resources */,
+				6E497D362144183A00885A4B /* art.scnassets in Resources */,
+				6E497D402144183B00885A4B /* LaunchScreen.storyboard in Resources */,
+				6E497D3D2144183B00885A4B /* Assets.xcassets in Resources */,
+				6E497D3B2144183A00885A4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E497D042143BBC000885A4B /* Resources */ = {
+		6E497D442144183B00885A4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E497D0F2143BBC000885A4B /* Resources */ = {
+		6E497D4F2144183B00885A4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +256,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E497CEE2143BBBD00885A4B /* Sources */ = {
+		6E497D2C2144183A00885A4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E497CF82143BBBD00885A4B /* ViewController.swift in Sources */,
-				6E497CF62143BBBD00885A4B /* AppDelegate.swift in Sources */,
+				6E497D382144183A00885A4B /* ViewController.swift in Sources */,
+				6E497D342144183A00885A4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E497D022143BBC000885A4B /* Sources */ = {
+		6E497D422144183B00885A4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E497D0B2143BBC000885A4B /* ARVisionTests.swift in Sources */,
+				6E497D4B2144183B00885A4B /* ARVisionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E497D0D2143BBC000885A4B /* Sources */ = {
+		6E497D4D2144183B00885A4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E497D162143BBC000885A4B /* ARVisionUITests.swift in Sources */,
+				6E497D562144183B00885A4B /* ARVisionUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E497D082143BBC000885A4B /* PBXTargetDependency */ = {
+		6E497D482144183B00885A4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E497CF12143BBBD00885A4B /* ARVision */;
-			targetProxy = 6E497D072143BBC000885A4B /* PBXContainerItemProxy */;
+			target = 6E497D2F2144183A00885A4B /* ARVision */;
+			targetProxy = 6E497D472144183B00885A4B /* PBXContainerItemProxy */;
 		};
-		6E497D132143BBC000885A4B /* PBXTargetDependency */ = {
+		6E497D532144183B00885A4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E497CF12143BBBD00885A4B /* ARVision */;
-			targetProxy = 6E497D122143BBC000885A4B /* PBXContainerItemProxy */;
+			target = 6E497D2F2144183A00885A4B /* ARVision */;
+			targetProxy = 6E497D522144183B00885A4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6E497CF92143BBBD00885A4B /* Main.storyboard */ = {
+		6E497D392144183A00885A4B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E497CFA2143BBBD00885A4B /* Base */,
+				6E497D3A2144183A00885A4B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6E497CFE2143BBC000885A4B /* LaunchScreen.storyboard */ = {
+		6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E497CFF2143BBC000885A4B /* Base */,
+				6E497D3F2144183B00885A4B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6E497D182143BBC000885A4B /* Debug */ = {
+		6E497D582144183B00885A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		6E497D192143BBC000885A4B /* Release */ = {
+		6E497D592144183B00885A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,13 +432,14 @@
 			};
 			name = Release;
 		};
-		6E497D1B2143BBC000885A4B /* Debug */ = {
+		6E497D5B2144183B00885A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJ9M2WLA9Z;
 				INFOPLIST_FILE = ARVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,13 +451,14 @@
 			};
 			name = Debug;
 		};
-		6E497D1C2143BBC000885A4B /* Release */ = {
+		6E497D5C2144183B00885A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJ9M2WLA9Z;
 				INFOPLIST_FILE = ARVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +470,7 @@
 			};
 			name = Release;
 		};
-		6E497D1E2143BBC000885A4B /* Debug */ = {
+		6E497D5E2144183B00885A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -485,7 +491,7 @@
 			};
 			name = Debug;
 		};
-		6E497D1F2143BBC000885A4B /* Release */ = {
+		6E497D5F2144183B00885A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -506,7 +512,7 @@
 			};
 			name = Release;
 		};
-		6E497D212143BBC000885A4B /* Debug */ = {
+		6E497D612144183B00885A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -526,7 +532,7 @@
 			};
 			name = Debug;
 		};
-		6E497D222143BBC000885A4B /* Release */ = {
+		6E497D622144183B00885A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -549,43 +555,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E497CED2143BBBD00885A4B /* Build configuration list for PBXProject "ARVision" */ = {
+		6E497D2B2144183A00885A4B /* Build configuration list for PBXProject "ARVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E497D182143BBC000885A4B /* Debug */,
-				6E497D192143BBC000885A4B /* Release */,
+				6E497D582144183B00885A4B /* Debug */,
+				6E497D592144183B00885A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E497D1A2143BBC000885A4B /* Build configuration list for PBXNativeTarget "ARVision" */ = {
+		6E497D5A2144183B00885A4B /* Build configuration list for PBXNativeTarget "ARVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E497D1B2143BBC000885A4B /* Debug */,
-				6E497D1C2143BBC000885A4B /* Release */,
+				6E497D5B2144183B00885A4B /* Debug */,
+				6E497D5C2144183B00885A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E497D1D2143BBC000885A4B /* Build configuration list for PBXNativeTarget "ARVisionTests" */ = {
+		6E497D5D2144183B00885A4B /* Build configuration list for PBXNativeTarget "ARVisionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E497D1E2143BBC000885A4B /* Debug */,
-				6E497D1F2143BBC000885A4B /* Release */,
+				6E497D5E2144183B00885A4B /* Debug */,
+				6E497D5F2144183B00885A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E497D202143BBC000885A4B /* Build configuration list for PBXNativeTarget "ARVisionUITests" */ = {
+		6E497D602144183B00885A4B /* Build configuration list for PBXNativeTarget "ARVisionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E497D212143BBC000885A4B /* Debug */,
-				6E497D222143BBC000885A4B /* Release */,
+				6E497D612144183B00885A4B /* Debug */,
+				6E497D622144183B00885A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6E497CEA2143BBBD00885A4B /* Project object */;
+	rootObject = 6E497D282144183A00885A4B /* Project object */;
 }
