@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67338DED21445B38006F87B2 /* ElBeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67338DEC21445B38006F87B2 /* ElBeeper.swift */; };
+		67338DF2214465E8006F87B2 /* aaahhh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67338DF1214465E8006F87B2 /* aaahhh.mp3 */; };
 		6E497D342144183A00885A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D332144183A00885A4B /* AppDelegate.swift */; };
 		6E497D382144183A00885A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D372144183A00885A4B /* ViewController.swift */; };
 		6E497D3B2144183A00885A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D392144183A00885A4B /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67338DEC21445B38006F87B2 /* ElBeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElBeeper.swift; sourceTree = "<group>"; };
+		67338DF1214465E8006F87B2 /* aaahhh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aaahhh.mp3; sourceTree = "<group>"; };
 		6E497D302144183A00885A4B /* ARVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E497D332144183A00885A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E497D372144183A00885A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +80,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67338DF0214465CA006F87B2 /* AudioEffects */ = {
+			isa = PBXGroup;
+			children = (
+				67338DF1214465E8006F87B2 /* aaahhh.mp3 */,
+			);
+			path = AudioEffects;
+			sourceTree = "<group>";
+		};
 		6E497D272144183A00885A4B = {
 			isa = PBXGroup;
 			children = (
+				67338DF0214465CA006F87B2 /* AudioEffects */,
 				6E497D322144183A00885A4B /* ARVision */,
 				6E497D492144183B00885A4B /* ARVisionTests */,
 				6E497D542144183B00885A4B /* ARVisionUITests */,
@@ -101,7 +114,11 @@
 			children = (
 				6E497D332144183A00885A4B /* AppDelegate.swift */,
 				6E497D372144183A00885A4B /* ViewController.swift */,
+<<<<<<< HEAD
 				6E497D652144257C00885A4B /* TestViewController.swift */,
+=======
+				67338DEC21445B38006F87B2 /* ElBeeper.swift */,
+>>>>>>> b8522c06772abf9524ff96c86df719b031e4af46
 				6E497D392144183A00885A4B /* Main.storyboard */,
 				6E497D3C2144183B00885A4B /* Assets.xcassets */,
 				6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */,
@@ -235,6 +252,7 @@
 				6E497D402144183B00885A4B /* LaunchScreen.storyboard in Resources */,
 				6E497D3D2144183B00885A4B /* Assets.xcassets in Resources */,
 				6E497D3B2144183A00885A4B /* Main.storyboard in Resources */,
+				67338DF2214465E8006F87B2 /* aaahhh.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67338DED21445B38006F87B2 /* ElBeeper.swift in Sources */,
 				6E497D382144183A00885A4B /* ViewController.swift in Sources */,
 				6E497D662144257C00885A4B /* TestViewController.swift in Sources */,
 				6E497D342144183A00885A4B /* AppDelegate.swift in Sources */,
