@@ -158,8 +158,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
         guard !self.identifierString.isEmpty else {
             return // No object was classified.
         }
-        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence"
+        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence and a distance of "
         statusViewController.showMessage(message)
+        
     }
     
     // MARK: - Tap gesture handler & ARSKViewDelegate
@@ -180,9 +181,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
             
             // Track anchor ID to associate text with the anchor after ARKit creates a corresponding SKNode.
            //print distance This is where the distance values are spit out to the console!!
-            anchorLabels[anchor.identifier] = identifierString
+            anchorLabels[anchor.identifier] = result.distance.description
             for result in sceneView.hitTest(CGPoint(x: 0.5, y: 0.5), types: [.existingPlaneUsingExtent, .featurePoint]) {
                 print(result.distance, result.worldTransform)
+                
             }
         }
     }
