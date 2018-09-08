@@ -23,6 +23,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        //DEBUGGER NODE THING!!!!!
+        sceneView.debugOptions =
+            SCNDebugOptions(rawValue: ARSCNDebugOptions.showWorldOrigin.rawValue |
+                ARSCNDebugOptions.showFeaturePoints.rawValue);
         // Create a new scene
         //let scene = SCNScene(named: "art.scnassets/ship.scn")!
         

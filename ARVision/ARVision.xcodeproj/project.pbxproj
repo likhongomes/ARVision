@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6E497D342144183A00885A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D332144183A00885A4B /* AppDelegate.swift */; };
-		6E497D362144183A00885A4B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D352144183A00885A4B /* art.scnassets */; };
 		6E497D382144183A00885A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D372144183A00885A4B /* ViewController.swift */; };
 		6E497D3B2144183A00885A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D392144183A00885A4B /* Main.storyboard */; };
 		6E497D3D2144183B00885A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D3C2144183B00885A4B /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		6E497D302144183A00885A4B /* ARVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E497D332144183A00885A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E497D352144183A00885A4B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		6E497D372144183A00885A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E497D3A2144183A00885A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E497D3C2144183B00885A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				6E497D332144183A00885A4B /* AppDelegate.swift */,
-				6E497D352144183A00885A4B /* art.scnassets */,
 				6E497D372144183A00885A4B /* ViewController.swift */,
 				6E497D392144183A00885A4B /* Main.storyboard */,
 				6E497D3C2144183B00885A4B /* Assets.xcassets */,
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E497D362144183A00885A4B /* art.scnassets in Resources */,
 				6E497D402144183B00885A4B /* LaunchScreen.storyboard in Resources */,
 				6E497D3D2144183B00885A4B /* Assets.xcassets in Resources */,
 				6E497D3B2144183A00885A4B /* Main.storyboard in Resources */,
@@ -437,14 +433,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UJ9M2WLA9Z;
+				DEVELOPMENT_TEAM = 76LZGCG5YD;
 				INFOPLIST_FILE = ARVision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARVision;
+				PRODUCT_BUNDLE_IDENTIFIER = razeware.ARniegeddon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,14 +452,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UJ9M2WLA9Z;
+				DEVELOPMENT_TEAM = 76LZGCG5YD;
 				INFOPLIST_FILE = ARVision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ARVision;
+				PRODUCT_BUNDLE_IDENTIFIER = razeware.ARniegeddon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
