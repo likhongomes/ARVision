@@ -158,7 +158,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
         guard !self.identifierString.isEmpty else {
             return // No object was classified.
         }
-        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence and a distance of "
+        let message = String(format: "Detected \(self.identifierString) with %.2f", self.confidence * 100) + "% confidence and a distance of \(self.anchorDistance)"
         statusViewController.showMessage(message)
         
     }
@@ -167,7 +167,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
     
     // Labels for classified objects by ARAnchor UUID
     private var anchorLabels = [UUID: String]()
-    
+    private var anchorDistance = ""
     // When the user taps, add an anchor associated with the current classification result.
     /// - Tag: PlaceLabelAtLocation
     @IBAction func placeLabelAtLocation(sender: UITapGestureRecognizer) {
@@ -184,7 +184,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
             anchorLabels[anchor.identifier] = result.distance.description
             for result in sceneView.hitTest(CGPoint(x: 0.5, y: 0.5), types: [.existingPlaneUsingExtent, .featurePoint]) {
                 print(result.distance, result.worldTransform)
-                
+                self.anchorDistance = result.distance.description
+                //return result.distance
             }
         }
     }
