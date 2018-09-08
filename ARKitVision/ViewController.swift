@@ -179,7 +179,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
             sceneView.session.add(anchor: anchor)
             
             // Track anchor ID to associate text with the anchor after ARKit creates a corresponding SKNode.
-           //print distance
+           //print distance This is where the distance values are spit out to the console!!
             anchorLabels[anchor.identifier] = identifierString
             for result in sceneView.hitTest(CGPoint(x: 0.5, y: 0.5), types: [.existingPlaneUsingExtent, .featurePoint]) {
                 print(result.distance, result.worldTransform)
