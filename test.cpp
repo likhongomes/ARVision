@@ -32,7 +32,14 @@ vector<string> classes;
 
 class imageRead {
 
- public:	
+ public:
+	float distance_to_camera(float bruh, float focalLength, int n);
+	void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame);
+
+	RotatedRect find_marker(Mat image, Mat & outputImage);
+	void postprocess(Mat& frame, const vector<Mat>& outs);
+		vector<String> getOutputsNames(const Net& net);
+	
         float outputFrame() {
 	imageRead(Mat readFrame){
 		frame = readFrame;
@@ -156,7 +163,7 @@ class imageRead {
     }
 }
 
-	RotatedRect imageRead::find_marker(Mat image, Mat & outputImage){
+RotatedRect imageRead::find_marker(Mat image, Mat & outputImage){
 
 	 vector<vector<Point > > contours;
 	 cvtColor(image, outputImage, CV_BGR2GRAY );
@@ -210,4 +217,8 @@ class imageRead {
     return names;
 }
 
-float imageRead::distance_to_camera()
+float imageRead::distance_to_camera(float bruh, float focalLength, int n)
+{
+	
+	return (bruh * focalLength) / n;
+}
