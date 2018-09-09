@@ -62,8 +62,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         return node
     }
 */
-    
-    func session(_ session: ARSession, didFailWithError error: Error) {
+    // The pixel buffer being held for analysis; used to serialize Vision requests.
+    private var currentBuffer: CVPixelBuffer?
+
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
         // Present an error message to the user
         // Do not enqueue other buffers for processing while another Vision task is still running.
         // The camera stream has only a finite amount of buffers available; holding too many buffers for analysis would starve the camera.
