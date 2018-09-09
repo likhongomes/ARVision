@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenCVWrapper : NSObject
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //func to get openCV
 +(NSString *) openCVVersionString;
++(UIImage *)makeCVfromImage:(UIImage *) image;
 @end
 
 NS_ASSUME_NONNULL_END
