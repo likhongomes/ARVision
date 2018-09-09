@@ -26,25 +26,26 @@ float confThreshold = 0.5; // Confidence threshold
 float nmsThreshold = 0.4;  // Non-maximum suppression threshold
 int inpWidth = 416;  // Width of network's input image
 int inpHeight = 416; // Height of network's input image
+float KNOWN_DISTANCE = 24.0;
+float KNOWN_WIDTH = 11.0;
 vector<string> classes;
 
-// Remove the bounding boxes with low confidence using non-maxima suppression
-void postprocess(Mat& frame, const vector<Mat>& out);
-
-// Draw the predicted bounding box
-void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame);
-
-// Get the names of the output layers
-vector<String> getOutputsNames(const Net& net);
-
-
 class imageRead {
-     
- public:	
 
+ public:	
+        float outputFrame() {
 	imageRead(Mat readFrame){
 		frame = readFrame;
-	} 
+	}
+// Remove the bounding boxes with low confidence using non-maxima suppression
+	void postprocess(Mat& frame, const vector<Mat>& out);
+
+// Draw the predicted bounding box
+	void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame);
+
+// Get the names of the output layers
+	vector<String> getOutputsNames(const Net& net);
+	
 	 // Give the configuration and weight files for the model
     String modelConfiguration = "yolov3.cfg";
     String modelWeights = "yolov3.weights";
@@ -60,21 +61,13 @@ class imageRead {
     VideoWriter video;
     Mat frame, blob;
     
-    try {
-        
-        outputFile = "yolo_out_cpp.avi";
+    outputFile = "yolo_out_cpp.avi";
        
-    // Get the video writer initialized to save the output video
-    if (!parser.has("image")) {
-	video.open(outputFile, VideoWriter::fourcc('M','J','P','G'), 8, Size(cap.get(CAP_PROP_FRAME_WIDTH), cap.get(CAP_PROP_FRAME_HEIGHT)));
-    }
-    
     // Create a window
     static const string kWinName = "Deep learning object detection in OpenCV";
     namedWindow(kWinName, WINDOW_NORMAL);
     // Process frames.
-    while (waitKey(1) < 0)
-    {
+
         // get frame from the video
 
         // Stop the program if reached end of video
@@ -97,22 +90,17 @@ class imageRead {
        
         // Write the frame with the detection boxes
         Mat detectedFrame;
-        //frame.convertTo(detectedFrame, CV_8U);
-	 if (parser.has("image")) imwrite(outputFile, detectedFrame);
-        else video.write(detectedFrame);
-        
-        imshow(kWinName, frame);
-        
-    }
-    
+        frame.convertTo(detectedFrame, CV_8U);
+	float focalLength = (300 * KNOWN_DISTANCE)/KNOWN_WIDTH;
+	inches = distance_to_camera(KNOWN_WIDTH, focalLength, 300 );
     cap.release();
-    if (!parser.has("image")) video.release();
-
+	
+    return inches;
+	}
     private:
     Mat frame;
+	float inches;
 
-	
-	
     };
 
 
@@ -120,7 +108,7 @@ class imageRead {
 
 
 // Remove the bounding boxes with low confidence using non-maxima suppression
-void postprocess(Mat& frame, const vector<Mat>& outs)
+	void imageRead::postprocess(Mat& frame, const vector<Mat>& outs)
 {
     vector<int> classIds;
     vector<float> confidences;
@@ -168,7 +156,7 @@ void postprocess(Mat& frame, const vector<Mat>& outs)
     }
 }
 
- RotatedRect find_marker(Mat image, Mat & outputImage){
+	RotatedRect imageRead::find_marker(Mat image, Mat & outputImage){
 
 	 vector<vector<Point > > contours;
 	 cvtColor(image, outputImage, CV_BGR2GRAY );
@@ -181,7 +169,7 @@ void postprocess(Mat& frame, const vector<Mat>& outs)
  }
  
 // Draw the predicted bounding box
-void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame)
+	void imageRead::drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame)
 {
     //Draw a rectangle displaying the bounding box
     rectangle(frame, Point(left, top), Point(right, bottom), Scalar(255, 178, 50), 3);
@@ -203,7 +191,7 @@ void drawPred(int classId, float conf, int left, int top, int right, int bottom,
 }
 
 // Get the names of the output layers
-vector<String> getOutputsNames(const Net& net)
+	vector<String> imageRead::getOutputsNames(const Net& net)
 {
     static vector<String> names;
     if (names.empty())
@@ -221,3 +209,5 @@ vector<String> getOutputsNames(const Net& net)
     }
     return names;
 }
+
+float imageRead::distance_to_camera()
