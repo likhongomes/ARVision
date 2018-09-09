@@ -65,6 +65,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
+        // Do not enqueue other buffers for processing while another Vision task is still running.
+        // The camera stream has only a finite amount of buffers available; holding too many buffers for analysis would starve the camera.
+        guard currentBuffer == nil, case .normal = frame.camera.trackingState else {
+            return
+        }
+        
+        // Retain the image buffer for Vision processing.
+        self.currentBuffer = frame.capturedImage
+        //This is where we would need to get the image to openCV!!
         
     }
     
