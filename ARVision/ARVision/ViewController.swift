@@ -9,7 +9,6 @@
 import UIKit
 import SceneKit
 import ARKit
-
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
@@ -73,10 +72,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             return
         }
         
+       
+        
         // Retain the image buffer for Vision processing.
         self.currentBuffer = frame.capturedImage
         //This is where we would need to get the image to openCV!!
-        
+        let image = CIImage(cvPixelBuffer: self.currentBuffer!)
+        let actual = UIImage(ciImage: image)
+        let OCV = OpenCVWrapper.makeCVfromImage(actual)
     }
     
     func sessionWasInterrupted(_ session: ARSession) {
