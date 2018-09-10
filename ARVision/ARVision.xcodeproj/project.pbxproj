@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4CCAA4214559B300771175 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4CCAA3214559B300771175 /* opencv2.framework */; };
+		2B4CCAA721455A1500771175 /* imageRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B4CCAA521455A1500771175 /* imageRead.cpp */; };
 		67338DED21445B38006F87B2 /* ElBeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67338DEC21445B38006F87B2 /* ElBeeper.swift */; };
 		67338DF2214465E8006F87B2 /* aaahhh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67338DF1214465E8006F87B2 /* aaahhh.mp3 */; };
 		67338ECD2144A804006F87B2 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67338ECC2144A804006F87B2 /* OpenCVWrapper.mm */; };
-		67338ECF21454EC9006F87B2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67338ECE21454EC9006F87B2 /* opencv2.framework */; };
 		6E497D342144183A00885A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D332144183A00885A4B /* AppDelegate.swift */; };
 		6E497D382144183A00885A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E497D372144183A00885A4B /* ViewController.swift */; };
 		6E497D3B2144183A00885A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E497D392144183A00885A4B /* Main.storyboard */; };
@@ -52,12 +53,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B4CCAA3214559B300771175 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2B4CCAA521455A1500771175 /* imageRead.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imageRead.cpp; sourceTree = "<group>"; };
+		2B4CCAA621455A1500771175 /* imageRead.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = imageRead.hpp; sourceTree = "<group>"; };
 		67338DEC21445B38006F87B2 /* ElBeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElBeeper.swift; sourceTree = "<group>"; };
 		67338DF1214465E8006F87B2 /* aaahhh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aaahhh.mp3; sourceTree = "<group>"; };
-		67338ECA2144A804006F87B2 /* ARVision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARVision-Bridging-Header.h"; sourceTree = "<group>"; };
+		67338ECA2144A804006F87B2 /* ARVision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ARVision-Bridging-Header.h"; path = "ARVision/ARVision-Bridging-Header.h"; sourceTree = "<group>"; };
 		67338ECB2144A804006F87B2 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		67338ECC2144A804006F87B2 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
-		67338ECE21454EC9006F87B2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		6E497D302144183A00885A4B /* ARVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E497D332144183A00885A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E497D372144183A00885A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67338ECF21454EC9006F87B2 /* opencv2.framework in Frameworks */,
+				2B4CCAA4214559B300771175 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +114,10 @@
 		6E497D272144183A00885A4B = {
 			isa = PBXGroup;
 			children = (
-				67338ECE21454EC9006F87B2 /* opencv2.framework */,
+				2B4CCAA521455A1500771175 /* imageRead.cpp */,
+				2B4CCAA621455A1500771175 /* imageRead.hpp */,
+				67338ECA2144A804006F87B2 /* ARVision-Bridging-Header.h */,
+				2B4CCAA3214559B300771175 /* opencv2.framework */,
 				67338DF0214465CA006F87B2 /* AudioEffects */,
 				6E497D322144183A00885A4B /* ARVision */,
 				6E497D492144183B00885A4B /* ARVisionTests */,
@@ -136,14 +142,13 @@
 				6E497D332144183A00885A4B /* AppDelegate.swift */,
 				67338ECB2144A804006F87B2 /* OpenCVWrapper.h */,
 				67338ECC2144A804006F87B2 /* OpenCVWrapper.mm */,
-				6E497D372144183A00885A4B /* ViewController.swift */,
 				6E497D652144257C00885A4B /* TestViewController.swift */,
+				6E497D372144183A00885A4B /* ViewController.swift */,
 				67338DEC21445B38006F87B2 /* ElBeeper.swift */,
 				6E497D392144183A00885A4B /* Main.storyboard */,
 				6E497D3C2144183B00885A4B /* Assets.xcassets */,
 				6E497D3E2144183B00885A4B /* LaunchScreen.storyboard */,
 				6E497D412144183B00885A4B /* Info.plist */,
-				67338ECA2144A804006F87B2 /* ARVision-Bridging-Header.h */,
 			);
 			path = ARVision;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				67338DED21445B38006F87B2 /* ElBeeper.swift in Sources */,
 				6E497D382144183A00885A4B /* ViewController.swift in Sources */,
 				67338ECD2144A804006F87B2 /* OpenCVWrapper.mm in Sources */,
+				2B4CCAA721455A1500771175 /* imageRead.cpp in Sources */,
 				6E497D662144257C00885A4B /* TestViewController.swift in Sources */,
 				6E497D342144183A00885A4B /* AppDelegate.swift in Sources */,
 			);
@@ -481,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76LZGCG5YD;
+				DEVELOPMENT_TEAM = 7M66NBT6B2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -492,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = razeware.ARniegeddon;
+				PRODUCT_BUNDLE_IDENTIFIER = tommytan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ARVision/ARVision-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -507,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76LZGCG5YD;
+				DEVELOPMENT_TEAM = 7M66NBT6B2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -518,7 +524,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = razeware.ARniegeddon;
+				PRODUCT_BUNDLE_IDENTIFIER = tommytan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ARVision/ARVision-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
